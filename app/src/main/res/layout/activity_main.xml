@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity = "left"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:orientation="vertical"
+            android:gravity = "right"
+            android:padding = "20sp"
+            android:background = "@drawable/blue_rectangle_corners"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="90sp"
+                android:layout_height="match_parent"
+                android:src="@drawable/moneybag1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="220sp"
+            android:layout_height="150sp"
+            android:orientation="horizontal"
+            android:layout_marginTop = "-65sp"
+            android:gravity = "left"
+            android:padding = "20sp"
+            android:background = "@drawable/light_rectangle_corners"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_weight = "1"
+                android:layout_height="match_parent"
+                android:gravity = "center"
+                android:text="Управляй своими финансами"
+                android:textSize = "20sp"
+                android:paddingBottom = "18sp"
+                android:textColor = "@color/white"
+                android:background = "@drawable/callout"
+                app:fontFamily="@font/roboto_bold" />
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:orientation="vertical"
+            android:gravity = "right"
+            android:padding = "30sp"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "left"
+                android:textSize = "18sp"
+                android:text = "Имя пользователя"
+                android:textColor = "@color/black"
+                app:fontFamily="@font/roboto_bold" />
+            <EditText
+                android:id="@+id/inputUsername"
+                android:layout_width="match_parent"
+                android:layout_height="56sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/input_box_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15sp"
+                android:text=""
+                android:textSize="18sp"
+                app:fontFamily="@font/roboto_medium" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "left"
+                android:layout_marginTop="10sp"
+                android:textSize = "18sp"
+                android:text = "Пароль"
+                android:textColor = "@color/black"
+                app:fontFamily="@font/roboto_bold" />
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_marginTop = "10sp"
+                android:layout_width="match_parent"
+                app:fontFamily="@font/roboto_medium"
+                android:textSize="18sp"
+                android:layout_height="56sp"
+                android:ems="10"
+                android:text=""
+                android:background = "@drawable/input_box_background"
+                android:paddingHorizontal = "15sp"
+                android:inputType="textPassword" />
+            <Button
+                android:id="@+id/logIn"
+                android:layout_marginTop = "30sp"
+                android:layout_width="100sp"
+                app:fontFamily="@font/roboto_medium"
+                android:layout_height="40sp"
+                android:layout_weight="0"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background = "@drawable/blue_rectangle_corners"
+                android:text="Войти" />
+        </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/logInDemo"
+            android:layout_marginBottom= "50sp"
+            android:layout_marginHorizontal = "30dp"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/roboto_medium"
+            android:layout_height="45sp"
+            android:layout_weight="0"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background = "@drawable/blue_rectangle_corners"
+            android:text="Войти без регистрации" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

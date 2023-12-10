@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background = "@drawable/input_box_background"
+    android:padding="15sp"
+    android:gravity="center"
+    android:layout_margin = "10sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Продукты"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:fontFamily="@font/roboto_medium" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:fontFamily="@font/roboto_medium" />
+    <LinearLayout
+        android:layout_margin = "5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity = "center"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="20sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:src="@drawable/left" />
+        <ImageView
+            android:id="@+id/categoryImage"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:src="@drawable/eda" />
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="20sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:src="@drawable/right" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/inputPrice"
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_box_background"
+        android:ems="10"
+        android:gravity = "center"
+        android:paddingHorizontal="15sp"
+        android:textSize="18sp"
+        app:fontFamily="@font/roboto_medium"
+        android:inputType="phone"
+        />
+    <LinearLayout
+        android:layout_margin = "5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/save"
+            android:layout_marginTop = "10sp"
+            android:layout_width="90sp"
+            app:fontFamily="@font/roboto_medium"
+            android:layout_height="40sp"
+            android:layout_weight="0"
+            android:layout_marginRight = "10sp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:background = "@drawable/blue_rectangle_corners"
+            android:text= "Сохранить" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_marginTop = "10sp"
+            android:layout_width="90sp"
+            app:fontFamily="@font/roboto_medium"
+            android:layout_height="40sp"
+            android:layout_marginLeft = "10sp"
+            android:layout_weight="0"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:background = "@drawable/blue_rectangle_corners"
+            android:text= "Удалить" />
+    </LinearLayout>
+
+</LinearLayout>

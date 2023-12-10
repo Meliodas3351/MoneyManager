@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15sp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Продукты"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:fontFamily="@font/roboto_medium" />
+
+    <ImageView
+        android:id="@+id/categoryImage"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:src="@drawable/eda" />
+
+    <EditText
+        android:id="@+id/inputPrice"
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_box_background"
+        android:ems="10"
+        android:gravity = "center"
+        android:paddingHorizontal="15sp"
+        android:textSize="18sp"
+        app:fontFamily="@font/roboto_medium"
+        android:inputType="phone"
+        />
+    <Button
+        android:id="@+id/addNote"
+        android:layout_marginTop = "10sp"
+        android:layout_width="100sp"
+        app:fontFamily="@font/roboto_medium"
+        android:layout_height="40sp"
+        android:layout_weight="0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background = "@drawable/blue_rectangle_corners"
+        android:text= "Добавить" />
+</LinearLayout>

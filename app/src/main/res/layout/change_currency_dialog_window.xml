@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingVertical="15sp"
+    android:paddingHorizontal="30sp"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/changeToBYN"
+        android:layout_width="80sp"
+        app:fontFamily="@font/roboto_medium"
+        android:layout_height="30sp"
+        android:layout_weight="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background = "@drawable/light_rectangle_corners"
+        android:text= "BYN" />
+    <Button
+        android:id="@+id/changeToRUB"
+        android:layout_width="80sp"
+        app:fontFamily="@font/roboto_medium"
+        android:layout_height="30sp"
+        android:layout_marginTop = "8sp"
+        android:layout_weight="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background = "@drawable/light_rectangle_corners"
+        android:text= "RUB" />
+    <Button
+        android:id="@+id/changeToUSD"
+        android:layout_width="80sp"
+        app:fontFamily="@font/roboto_medium"
+        android:layout_marginTop = "8sp"
+        android:layout_height="30sp"
+        android:layout_weight="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background = "@drawable/light_rectangle_corners"
+        android:text= "USD" />
+    <Button
+        android:id="@+id/changeToEUR"
+        android:layout_width="80sp"
+        android:layout_marginTop = "8sp"
+        app:fontFamily="@font/roboto_medium"
+        android:layout_height="30sp"
+        android:layout_weight="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background = "@drawable/light_rectangle_corners"
+        android:text= "EUR" />
+
+    <Button
+        android:id="@+id/saveCurrencyChanges"
+        android:layout_width="100sp"
+        android:layout_marginTop = "15sp"
+        app:fontFamily="@font/roboto_medium"
+        android:layout_height="25sp"
+        android:layout_weight="0"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background = "@drawable/black_button"
+        android:text= "Save" />
+</LinearLayout>
